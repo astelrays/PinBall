@@ -40,6 +40,22 @@ public class FripperController : MonoBehaviour
         {
             SetAngle(this.defaultAngle);
         }
+        if((Input.GetKeyDown(KeyCode.S)&&tag=="RightFripperTag"))
+        {
+            SetAngle(this.flickAngle);
+        }
+        if((Input.GetKeyUp(KeyCode.S)&&tag=="RightFripperTag"))
+        {
+            SetAngle(this.defaultAngle);
+        }
+        if(Input.GetKeyDown(KeyCode.S)&&tag=="LeftFripperTag")
+        {
+            SetAngle(this.flickAngle);
+        }
+        if(Input.GetKeyUp(KeyCode.S)&&tag=="LeftFripperTag")
+        {
+            SetAngle(this.defaultAngle);
+        }
         if(Input.touchCount>0)
         {
             SetAngle(this.defaultAngle);
